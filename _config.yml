@@ -1,6 +1,6 @@
 #encoding: utf-8
 #markdown解析器
-#markdown:       kramdown
+markdown:       rdiscount
 
 
 #使用pygments进行编程语言的语法着色
