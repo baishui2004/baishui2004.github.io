@@ -1,7 +1,6 @@
 --- 
 title:      关于我
 layout:     default
-group:      navigation
 ---
 
 <span class="article-title">关于我</span>
