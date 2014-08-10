@@ -1,10 +1,10 @@
-encoding: utf-8
+#encoding: utf-8
+#markdown解析器
+#markdown:       kramdown
 
 
 #使用pygments进行编程语言的语法着色
 pygments:       true
-#markdown解析器
-markdown:       kramdown
 #分页每页多少篇
 paginate:       5
 
