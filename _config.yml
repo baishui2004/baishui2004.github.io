@@ -1,0 +1,75 @@
+encoding: utf-8
+
+
+#使用pygments进行编程语言的语法着色
+pygments:       true
+#markdown解析器
+markdown:       kramdown
+#分页每页多少篇
+paginate:       5
+
+
+css:
+    - /static/css/default.css
+    - /static/css/appden-part.css
+
+
+#导航
+nav:
+    - name:     首页
+      url:      /
+
+    - name:     项目
+      url:      /project.html
+
+    - name:     技术
+      url:      /
+
+    - name:     生活
+      url:      /life/
+
+    - name:     文章分类
+      url:      /categories.html
+
+    - name:     文章标签
+      url:      /tags.html
+
+    - name:     关于我
+      url:      /about.html
+
+#项目
+projects:
+     - name:         jQuery bsgrid
+       file:         /project/2014/08/08/jquery_bsgrid.html
+       url:          https://github.com/baishui2004/jquery.bsgrid
+       demo:         http://bs2004.sinaapp.com/bsgrid/index.html
+       description:  一个简单易用的jquery grid插件，支持分页或不分页，支持json、xml数据格式，对导出友好，扩展性友好。
+     - name:         Common Gui Tools
+       file:         /project/2014/07/03/common_gui_tools.html
+       url:          https://github.com/baishui2004/common_gui_tools
+       description:  使用java编写，GUI界面的实用小工具集，当前1.1版有13个小工具。
+
+#链接
+links:
+     - name:    GitHub
+       url:     http://github.com/baishui2004
+     - name:    OSChina
+       url:     http://oschina.net/baishui2004
+
+  
+#网站的一些描述信息
+
+title:          灿烂人生&nbsp;&nbsp;风尘仆仆
+url:            http://thebestofyouth.com
+description:    灿烂人生，风尘仆仆。
+comment:        我愿你再见我时，是我一路走来，风尘仆仆的样子。
+
+about:          生活，平凡但求不平乏，愿发现并记述其真实与真诚。
+
+author:
+    name:       baishui2004
+    email:      bs2004@163.com
+
+copyright:
+    - Design by Baishui2004.
+    - "&copy; Copyright 2014, Baishui2004. All Rights Reserved."

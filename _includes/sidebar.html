@@ -1,0 +1,33 @@
+
+{% if site.title %}
+	<div class="widget">
+		<span>最新文章</span>
+		<ul>
+			{% for post in site.posts limit:5 %}
+				<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endif %}
+
+{% if site.bookmarks %}
+	<div class="widget">
+		<span>热门文章</span>
+		<ul>
+			{% for bookmark in site.bookmarks %}
+				<li><a href="{{ bookmark.url }}">{{ bookmark.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endif %}
+
+{% if site.links %}
+	<div class="widget">
+		<span>友情链接</span>
+		<ul>
+		{% for link in site.links %}
+			<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
+		{% endfor %}
+		</ul>
+	</div>
+{% endif %}

@@ -1,0 +1,3 @@
+	{% for item in site.nav %}
+		<a{% if item.url %} href="{{ item.url }}"{% endif %}>{{ item.name }}</a>
+	{% endfor %}

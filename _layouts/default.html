@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="generator" content="Jekyll" />
+		<meta name="author" content="{{ site.author.name }}" />
+		<meta name="description" content="{{ site.description }}" />
+
+		<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
+		
+		{% for css in site.css %}
+			<link rel="stylesheet" href="{{ css }}" type="text/css" />
+		{% endfor %}
+		{% for css in page.css %}
+			<link rel="stylesheet" href="{{ css }}" type="text/css" />
+		{% endfor %}
+	</head>
+	<body>
+		<div id="header">
+			<span>{{ site.comment }}</span>
+			<h1><a href="/">{{ site.title }}</a></h1>
+			<div id="nav">{% include nav.html %}</div>
+		</div>
+		
+		<div id="content" {% if page.sidebar != false %}class="content-background"{% endif %}>
+			{% if page.sidebar != false %}
+				<div id="alpha">
+					{{ content }}
+				</div>
+				<div id="beta">
+					{% include sidebar.html %}
+				</div>
+			{% endif %}
+			
+			{% if page.sidebar == false %}
+				{{ content }}
+			{% endif %}
+			
+			<div class="clear"></div>
+		</div>
+		
+		<div id="footer">
+			<div id="about">
+				<div>{{ site.about }}</div>
+			</div>
+			<div id="copyright">
+				{% for line in site.copyright %}
+				<div>{{ line }}</div>
+				{% endfor %}
+			</div>
+		</div>
+		
+		{% for js in site.js %}
+			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
+		{% for js in page.js %}
+			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
+	</body>
+</html>

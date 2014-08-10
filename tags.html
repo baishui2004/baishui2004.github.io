@@ -1,0 +1,22 @@
+---
+title:      文章标签
+layout:     default
+header:     Posts By Tag
+group:      navigation
+---
+{% include JB/setup %}
+
+<span class="article-title-light">文章标签列表</span>
+<ul class="tags tag_box inline">
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+</ul>
+
+
+{% for tag in site.tags %} 
+  <span class="article-title-light" id="{{ tag[0] }}-ref">标签:{{ tag[0] }}</span>
+  <ul>
+    {% assign pages_list = tag[1] %}  
+    {% include JB/pages_list %}
+  </ul>
+{% endfor %}
