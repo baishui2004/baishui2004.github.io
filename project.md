@@ -1,7 +1,6 @@
 --- 
 title:      项目
 layout:     default
-permalink:  /project/
 ---
 
 <span class="article-title">项目</span>
