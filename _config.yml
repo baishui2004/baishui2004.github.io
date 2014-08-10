@@ -1,12 +1,12 @@
-#encoding: utf-8
-#markdown解析器
-markdown:       rdiscount
-
-
-#使用pygments进行编程语言的语法着色
 pygments:       true
+#使用pygments进行编程语言的语法着色
 #分页每页多少篇
 paginate:       5
+
+#encoding: utf-8
+#markdown解析器
+#markdown:       kramdown
+#markdown:       rdiscount
 
 
 css:
@@ -35,7 +35,7 @@ nav:
       url:      /tags.html
 
     - name:     关于我
-      url:      /about/
+      url:      /about.html
 
 #项目
 projects:
