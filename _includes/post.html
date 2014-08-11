@@ -31,6 +31,9 @@
 		<p>
 			Posted on {{ post.date | date:'%B %d %Y, %A' | replace:' 0',' ' }}
 		</p>
+		{% if page.category %}
+			{% include Social/wumi.html %}
+		{% endif %}
 	</div>
 	{% if page.category %}
 		{% include Social/duoshuo.html %}
