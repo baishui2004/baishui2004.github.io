@@ -1,11 +1,11 @@
 pygments:       true
 #使用pygments进行编程语言的语法着色
 #分页每页多少篇
-paginate:       5
+paginate:       2
 
-#encoding: utf-8
+encoding: utf-8
 #markdown解析器
-#markdown:       kramdown
+markdown:       kramdown
 #markdown:       rdiscount
 
 

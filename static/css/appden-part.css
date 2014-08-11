@@ -1,13 +1,14 @@
 /* @group Entry */
 
 .entry, #pagination, #comments {
-	margin-left: 55px;
+	/*margin-left: 55px;*/
 }
 
 .entry {
 	margin-bottom: 45px;
 }
 
+/*
 .entry-date {
 	float: left;
 	margin-left: -55px;
@@ -21,6 +22,7 @@
 	font-size: 27px;
 	color: #175158;
 }
+*/
 
 .entry-footer {
 	background: url(../images/appden/horizontal.png) repeat-x;
@@ -30,6 +32,7 @@
 	line-height: 15px;
 }
 
+/*
 .entry-comments {
 	background-image: url(../images/appden/bubble.png);
 	float: left;
@@ -41,6 +44,7 @@
 	font-size: 16px;
 	color: white;
 }
+*/
 
 /* @group Entry Contents */
 

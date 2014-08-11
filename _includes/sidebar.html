@@ -1,6 +1,6 @@
 
 {% if site.title %}
-	<div class="widget">
+	<div class="widget widget-none">
 		<span>最新文章</span>
 		<ul>
 			{% for post in site.posts limit:5 %}
@@ -11,7 +11,7 @@
 {% endif %}
 
 {% if site.bookmarks %}
-	<div class="widget">
+	<div class="widget widget-none">
 		<span>热门文章</span>
 		<ul>
 			{% for bookmark in site.bookmarks %}
@@ -22,12 +22,35 @@
 {% endif %}
 
 {% if site.links %}
-	<div class="widget">
+	<div class="widget widget-none">
 		<span>友情链接</span>
 		<ul>
 		{% for link in site.links %}
 			<li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a></li>
 		{% endfor %}
+		</ul>
+	</div>
+{% endif %}
+
+
+{% include JB/setup %}
+
+{% if site.categories %}
+	<div class="widget">
+		<span>文章分类</span>
+		<ul>
+			{% assign categories_list = site.categories %}
+			{% include JB/categories_list %}
+		</ul>
+	</div>
+{% endif %}
+
+{% if site.tags %}
+	<div class="widget">
+		<span>文章标签</span>
+		<ul>
+			{% assign tags_list = site.tags %}  
+			{% include JB/tags_list %}
 		</ul>
 	</div>
 {% endif %}

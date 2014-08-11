@@ -34,6 +34,7 @@ a {
 	width: 100%;
 }
 
+
 .article-title {
 	font-size: 24px;
 	font-weight: 900;
@@ -58,13 +59,40 @@ a {
 	color: #c14c14;
 }
 
+
 .widget ul {
+	padding-left: 18px;
+}
+
+.widget {
+	font-size: 14px;
+}
+
+.widget ul span {
+	color: #555;
+}
+
+.widget-none a {
+	color: #4d6c70;
+}
+
+.widget-none ul {
 	padding-left: 0px;
 }
 
-.widget ul li {
+.widget-none ul li {
 	list-style-type: none;
 }
+
+
+.tag_box.inline {
+	padding-left: 20px;
+}
+
+.tag_box.inline li{
+	margin: 4px auto 4px 2px;
+}
+
 
 #about {
 	padding-top: 8px;
@@ -144,7 +172,6 @@ body {
 
 .widget a {
 	font-size: 14px;
-	color: #4d6c70;
 }
 
 #footer {

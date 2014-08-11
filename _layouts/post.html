@@ -8,11 +8,11 @@ layout: default
 {% include post.html %}
 
 <div id="pagination">
-	{% if page.previous %}
-		<a class="prev" href="{{ page.previous.url }}">&laquo; {{ page.previous.title | truncatewords:5 }}</a>
+	{% if page.next %}
+		<a class="prev" href="{{ page.next.url }}">&laquo; {{ page.next.title | truncatewords:5 }}</a>
 	{% endif %}
 	
-	{% if page.next %}
-		<a class="next" href="{{ page.next.url }}">{{ page.next.title | truncatewords:5 }} &raquo;</a>
+	{% if page.previous %}
+		<a class="next" href="{{ page.previous.url }}">{{ page.previous.title | truncatewords:5 }} &raquo;</a>
 	{% endif %}
 </div>

@@ -1,11 +1,10 @@
 --- 
 title:      jQuery bsgrid
-layout:     default
-sidebar:    false
-category:   project
+layout:     post
+category:   Project
 tags: 
- - jquery
- - grid
+ - jQuery
+ - Grid
  - bsgrid
 ---
 

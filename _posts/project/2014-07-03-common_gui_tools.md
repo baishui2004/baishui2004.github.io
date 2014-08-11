@@ -1,12 +1,11 @@
 --- 
 title:      Common Gui Tools
-layout:     default
-sidebar:    false
-category:   project
+layout:     post
+category:   Project
 tags: 
- - java
- - gui
- - tools
+ - Java
+ - Gui
+ - Tools
 ---
 
 Common Gui Tools

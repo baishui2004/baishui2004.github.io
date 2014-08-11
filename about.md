@@ -7,5 +7,8 @@ layout:     default
 
 <p />
 <div class="article-content">
-	Email:&nbsp;{{ site.author.email }}
+	邮箱：{{ site.author.email }}
+	{% for link in site.links %}
+	<br />{{ link.name }}：<a href="{{ link.url }}" target="_blank">{{ link.url }}</a>
+	{% endfor %}
 </div>

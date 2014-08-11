@@ -6,18 +6,19 @@ group:      navigation
 ---
 {% include JB/setup %}
 
-<span class="article-title-light">文章分类列表</span>
+<span class="article-title">文章分类</span>
 <ul class="categories tag_box inline">
   {% assign categories_list = site.categories %}
   {% include JB/categories_list %}
 </ul>
-
+<br />
 
 {% for category in site.categories %} 
-  <span class="article-title-light" id="{{ category[0] }}-ref">分类:{{ category[0] | join: "/" }}</span>
-  <ul>
+  <span class="article-title-light" id="{{ category[0] }}-ref">分类：{{ category[0] | join: "/" }}</span>
+  <ul class="categories tag_box inline">
     {% assign pages_list = category[1] %}  
     {% include JB/pages_list %}
   </ul>
+  <br />
 {% endfor %}
 
