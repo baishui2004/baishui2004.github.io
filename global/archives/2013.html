@@ -8,7 +8,7 @@ permalink:  archives/years/2013.html
 <br />
 
 <ul class="ul_box">
-	{% for post in site.posts offset:1 %}
+	{% for post in site.posts %}
 		{% capture y %}{{ post.date | date:"%Y"}}{% endcapture %}
 		{% capture year %}2013{% endcapture %}
 		{% if y != year %}
