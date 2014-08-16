@@ -37,6 +37,9 @@ nav:
     - name:     留言板
       url:      /messages.html
 
+    - name:     留言板
+      url:      /messages.html
+
     - name:     关于我
       url:      /about.html
 

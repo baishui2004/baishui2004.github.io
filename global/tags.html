@@ -5,6 +5,7 @@ permalink:  tags.html
 ---
 {% include JB/setup %}
 
+<<<<<<< HEAD
 <span class="article-title">{{ page.title }}</span>
 <ul class="ul_box">
   {% assign tags_list = site.tags %}  
@@ -16,6 +17,19 @@ permalink:  tags.html
 {% for tag in site.tags %} 
   <span class="article-title-light" id="{{ tag[0] }}-ref">标签：{{ tag[0] }}</span>
   <ul class="ul_box">
+=======
+<span class="article-title">文章标签</span>
+<ul class="tags tag_box inline">
+  {% assign tags_list = site.tags %}  
+  {% include JB/tags_list %}
+</ul>
+<br />
+
+
+{% for tag in site.tags %} 
+  <span class="article-title-light" id="{{ tag[0] }}-ref">标签：{{ tag[0] }}</span>
+  <ul class="tags tag_box inline">
+>>>>>>> branch 'master' of https://github.com/baishui2004/baishui2004.github.io.git
     {% assign pages_list = tag[1] %}  
     {% include JB/pages_list %}
   </ul>
