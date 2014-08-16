@@ -1,13 +1,12 @@
 ---
 title:      文章分类
 layout:     default
-header:     Posts By Category
-group:      navigation
+permalink:  categories.html
 ---
 {% include JB/setup %}
 
-<span class="article-title">文章分类</span>
-<ul class="categories tag_box inline">
+<span class="article-title">{{ page.title }}</span>
+<ul class="ul_box">
   {% assign categories_list = site.categories %}
   {% include JB/categories_list %}
 </ul>
@@ -15,7 +14,7 @@ group:      navigation
 
 {% for category in site.categories %} 
   <span class="article-title-light" id="{{ category[0] }}-ref">分类：{{ category[0] | join: "/" }}</span>
-  <ul class="categories tag_box inline">
+  <ul class="ul_box">
     {% assign pages_list = category[1] %}  
     {% include JB/pages_list %}
   </ul>

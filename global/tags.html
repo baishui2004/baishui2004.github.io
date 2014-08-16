@@ -1,13 +1,12 @@
 ---
 title:      文章标签
 layout:     default
-header:     Posts By Tag
-group:      navigation
+permalink:  tags.html
 ---
 {% include JB/setup %}
 
-<span class="article-title">文章标签</span>
-<ul class="tags tag_box inline">
+<span class="article-title">{{ page.title }}</span>
+<ul class="ul_box">
   {% assign tags_list = site.tags %}  
   {% include JB/tags_list %}
 </ul>
@@ -16,7 +15,7 @@ group:      navigation
 
 {% for tag in site.tags %} 
   <span class="article-title-light" id="{{ tag[0] }}-ref">标签：{{ tag[0] }}</span>
-  <ul class="tags tag_box inline">
+  <ul class="ul_box">
     {% assign pages_list = tag[1] %}  
     {% include JB/pages_list %}
   </ul>

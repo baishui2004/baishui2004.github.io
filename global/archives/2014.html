@@ -1,0 +1,22 @@
+---
+title:      2014年文章归档
+layout:     default
+permalink:  archives/years/2014.html
+---
+
+<span class="article-title">{{ page.title }}</span>
+<br />
+
+<ul class="ul_box">
+	{% for post in site.posts offset:1 %}
+		{% capture y %}{{ post.date | date:"%Y"}}{% endcapture %}
+		{% capture year %}2014{% endcapture %}
+		{% if y != year %}
+		{% else %}
+			<li>
+				{{ post.date | date: "%m.%d" }}:&nbsp;&nbsp;
+				<a href="{{ post.url }}">{{ post.title }}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>

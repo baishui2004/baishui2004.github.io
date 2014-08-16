@@ -1,0 +1,38 @@
+---
+title:      文章归档
+layout:     default
+permalink:  archives.html
+---
+
+<span class="article-title">{{ page.title }}</span>
+&nbsp;
+<span><a href="archives/years.html" style="font-size: 12px; color: #777;">文章归档年份</a></span>
+<br />
+
+	{% for post in site.posts  %}
+		{% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+		{% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+		{% if forloop.first %}
+			<br />
+			<span class="article-title-light">{{this_year}}</span>
+			<ul class="ul_box">
+		{% endif %}
+
+				<li>
+					{{ post.date | date: "%m.%d" }}:&nbsp;&nbsp;
+					<a href="{{ post.url }}">{{ post.title }}</a>
+				</li>
+
+		{% if forloop.last %}
+			</ul>
+		{% else %}
+		{% if this_year != next_year %}
+			</ul>
+			<br />
+			<span class="article-title-light">{{next_year}} &nbsp;</span>
+			<ul class="ul_box">
+		{% endif %}
+		{% endif %}
+
+	{% endfor %}

@@ -1,14 +1,15 @@
 ---
 title:      项目
 layout:     default
+permalink:  project.html
 ---
 
-<span class="article-title">项目</span>
+<span class="article-title">{{ page.title }}</span>
 
 <p />
 <div class="article-content">
 	{% for project in site.projects %}
-		<span class="article-content-title"><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></span>
+		<span class="article-content-title" style="font-weight: 900;"><a href="{{ project.url }}" target="_blank">{{ project.name }}</a></span>
 		<br /><span>项目主页：<a href="{{ project.url }}" target="_blank">{{ project.url }}</a></span>
 		<br /><span>项目介绍：<a href="{{ project.file }}">{{ project.file }}</a></span>
 		{% if project.demo %}

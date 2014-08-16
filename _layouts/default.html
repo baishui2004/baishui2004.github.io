@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-<head>
-		<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+	<head>
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 		
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="generator" content="Jekyll" />
 		<meta name="author" content="{{ site.author.name }}" />
-		<meta name="description" content="{{ site.description }}" />
-		<!--
-		<base href="http://thebestofyouth.com/" />
-		-->
+
+		<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
+		<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+		
+		<base href="" />
 		{% for css in site.css %}
 			<link rel="stylesheet" href="{{ css }}" type="text/css" />
 		{% endfor %}
