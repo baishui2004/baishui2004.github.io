@@ -1,6 +1,7 @@
 ---
 title:      关于我
 layout:     default
+permalink:  about.html
 ---
 
 <span class="article-title">关于我</span>

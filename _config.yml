@@ -34,6 +34,9 @@ nav:
     - name:     文章标签
       url:      /tags.html
 
+    - name:     留言板
+      url:      /messages.html
+
     - name:     关于我
       url:      /about.html
 
@@ -59,15 +62,15 @@ links:
   
 #网站的一些描述信息
 
-title:          灿烂人生&nbsp;&nbsp;风尘仆仆
-url:            http://thebestofyouth.com
+title:          灿烂人生&nbsp;&nbsp;风尘仆仆     
 description:    灿烂人生，风尘仆仆。
+keywords:       common gui tools,bsgrid,github,jekyll,baishui2004,灿烂人生
 comment:        我愿你再见我时，是我一路走来，风尘仆仆的样子。
 
 about:          生活，平凡但求不平乏，愿发现并记述其真实与真诚。
 
 author:
-    name:       baishui2004
+    name:       Baishui2004
     email:      bs2004@163.com
 
 copyright:
