@@ -37,7 +37,7 @@
 		<span>文章分类</span>
 		<ul>
 			{% for category in site.categories %} 
-			<li><a href="/categories.html#{{ category[0] }}-ref">{{ category[0] }}</a><span>({{ category[1].size }})</span></li>
+			<li><a href="/category.html?param={{ category[0] }}">{{ category[0] }}</a><span>({{ category[1].size }})</span></li>
 			{% endfor %}
 		</ul>
 	</div>
@@ -48,7 +48,7 @@
 		<span>文章标签</span>
 		<ul>
 			{% for tag in site.tags %} 
-			<li><a href="/tags.html#{{ tag[0] }}-ref">{{ tag[0] }}</a><span>({{ tag[1].size }})</span></li>
+			<li><a href="/tag.html?param={{ tag[0] }}">{{ tag[0] }}</a><span>({{ tag[1].size }})</span></li>
 			{% endfor %}
 		</ul>
 	</div>

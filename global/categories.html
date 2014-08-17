@@ -16,7 +16,7 @@ permalink:  categories.html
 <span class="article-title-light" id="{{ category[0] }}-ref">分类：{{ category[0] }}</span>
 <ul class="ul_box">
 	{% for node in category[1] %}
-		<li><a href="{{node.url}}">{{node.title}}</a></li>
+		<li>{{ node.date | date: "%Y-%m-%d" }}:&nbsp;&nbsp;<a href="{{node.url}}">{{node.title}}</a></li>
 	{% endfor %}
 </ul>
 <br />
