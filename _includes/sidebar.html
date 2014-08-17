@@ -32,15 +32,13 @@
 	</div>
 {% endif %}
 
-
-{% include JB/setup %}
-
 {% if site.categories %}
 	<div class="widget">
 		<span>文章分类</span>
 		<ul>
-			{% assign categories_list = site.categories %}
-			{% include JB/categories_list %}
+			{% for category in site.categories %} 
+			<li><a href="/categories.html#{{ category[0] }}-ref">{{ category[0] }}</a><span>({{ category[1].size }})</span></li>
+			{% endfor %}
 		</ul>
 	</div>
 {% endif %}
@@ -49,8 +47,9 @@
 	<div class="widget">
 		<span>文章标签</span>
 		<ul>
-			{% assign tags_list = site.tags %}  
-			{% include JB/tags_list %}
+			{% for tag in site.tags %} 
+			<li><a href="/tags.html#{{ tag[0] }}-ref">{{ tag[0] }}</a><span>({{ tag[1].size }})</span></li>
+			{% endfor %}
 		</ul>
 	</div>
 {% endif %}
