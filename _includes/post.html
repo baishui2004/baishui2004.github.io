@@ -21,6 +21,11 @@
 	<div class="entry-contents">
 		{% if detail %}
 			{{ content }}
+		{% elsif post.content contains "<!-- more -->" %}
+			{{ post.content | split:'<!-- more -->' | first }}
+			<br />
+			<span style="float: right;"><a href="{{ post.url }}" style="font-size: 12px; color: #777; text-decoration: none;">阅读全文</a></span>
+			<br />
 		{% else %}
 			{{ post.content }}
 		{% endif %}
