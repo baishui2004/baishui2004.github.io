@@ -3,6 +3,10 @@ a {
 	color: #c14c14;
 }
 
+a:hover {
+	text-decoration: underline;
+}
+
 /* header */
 #header span {
 	font-size: 12px;
