@@ -1,7 +1,7 @@
 highlighter:    pygments
 #使用pygments进行编程语言的语法着色
 #分页每页多少篇
-paginate:       2
+paginate:       3
 
 encoding:       utf-8
 #markdown解析器
