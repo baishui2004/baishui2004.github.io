@@ -63,6 +63,9 @@ a:hover {
 	color: #c14c14;
 }
 
+.article-description {
+	font-size: 14px;
+}
 
 .widget ul {
 	padding-left: 18px;

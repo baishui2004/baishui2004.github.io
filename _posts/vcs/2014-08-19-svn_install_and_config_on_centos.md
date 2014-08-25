@@ -1,5 +1,5 @@
 --- 
-title:      CentOS下安装SVN服务及配置
+title:      CentOS下安装SVN服务
 layout:     post
 category:   vcs
 tags: 

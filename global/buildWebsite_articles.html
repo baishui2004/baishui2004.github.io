@@ -1,7 +1,7 @@
 ---
-title:      生活
+title:      网站搭建
 layout:     default
-permalink:  life_articles.html
+permalink:  buildWebsite_articles.html
 ---
 
 <span class="article-title">{{ page.title }}</span>
@@ -9,9 +9,8 @@ permalink:  life_articles.html
 
 <ul class="ul_box">
 
-	{% for post in site.categories.life %} 
+	{% for post in site.categories.buildwebsite %} 
 	<li>
-		{{ post.date | date: "%m.%d" }}:&nbsp;&nbsp;
 		<a href="{{ post.url }}" target="_blank">{{ post.title }}</a>
 	</li>
 	{% endfor %}

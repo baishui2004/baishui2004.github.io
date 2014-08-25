@@ -1,7 +1,7 @@
 highlighter:    pygments
 #使用pygments进行编程语言的语法着色
 #分页每页多少篇
-paginate:       3
+paginate:       5
 
 encoding:       utf-8
 #markdown解析器
@@ -19,11 +19,14 @@ nav:
     - name:     首页
       url:      /
 
+    - name:     生活
+      url:      /life.html
+
     - name:     项目
       url:      /project.html
 
-    - name:     生活
-      url:      /life.html
+    - name:     网站搭建
+      url:      /buildwebsite.html
 
     - name:     分类
       url:      /categories.html
@@ -48,7 +51,7 @@ projects:
        demo:         http://bs2004.sinaapp.com/bsgrid/index.html
        description:  一个简单易用的jquery grid插件，支持分页或不分页，支持json、xml数据格式，对导出友好，扩展性友好。
      - name:         Common Gui Tools
-       file:         /project/2014/07/03/common_gui_tools.html
+       file:         /project/common_gui_tools.html
        url:          https://github.com/baishui2004/common_gui_tools
        description:  使用java编写，GUI界面的实用小工具集，当前1.1版有13个小工具。
 

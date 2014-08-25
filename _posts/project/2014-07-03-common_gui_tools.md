@@ -1,6 +1,7 @@
 --- 
-title:      Common Gui Tools
+title:      Java GUI实用小工具集 Common Gui Tools
 layout:     post
+permalink:  project/common_gui_tools.html
 category:   Project
 tags: 
  - Java
