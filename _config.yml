@@ -48,7 +48,7 @@ projects:
      - name:         jQuery bsgrid
        file:         /project/2014/08/08/jquery_bsgrid.html
        url:          https://github.com/baishui2004/jquery.bsgrid
-       demo:         http://bs2004.sinaapp.com/bsgrid/index.html
+       demo:         http://jquery-bsgrid.coding.io
        description:  一个简单易用的jquery grid插件，支持分页或不分页，支持json、xml数据格式，对导出友好，扩展性友好。
      - name:         Common Gui Tools
        file:         /project/common_gui_tools.html
