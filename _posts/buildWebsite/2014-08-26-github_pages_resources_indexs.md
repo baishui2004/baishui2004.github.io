@@ -69,5 +69,11 @@ CNZZ - 中文网站统计分析平台
 网站分析 有TA相伴 - 腾讯分析
 <br />&emsp;[http://ta.qq.com/](http://ta.qq.com/)
 <br />
+百度云加速 - 云时代的网站安全加速平台 | 免费网站加速_网站防火墙_防CC_防DDOS_免费CDN加速
+<br />&emsp;[http://yunjiasu.baidu.com/](http://yunjiasu.baidu.com/)
+<br />
+百度云观测 - 百度旗下网站云监测平台|免费安全检测|网站测速|漏洞扫描|网站检测
+<br />&emsp;[http://ce.baidu.com/](http://ce.baidu.com/)
+<br />
 百度统计——最大的中文网站分析平台
 <br />&emsp;[http://tongji.baidu.com/](http://tongji.baidu.com/)
