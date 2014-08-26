@@ -1,5 +1,5 @@
 --- 
-title:      简单易用的jquery grid插件 Common Gui Tools
+title:      简单易用的jquery grid插件 jquery.bsgrid
 layout:     post
 permalink:  project/jquery_bsgrid.html
 category:   Project
