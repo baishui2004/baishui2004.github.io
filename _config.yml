@@ -26,7 +26,7 @@ nav:
       url:      /project.html
 
     - name:     网站搭建
-      url:      /buildwebsite.html
+      url:      /buildWebsite.html
 
     - name:     分类
       url:      /categories.html
