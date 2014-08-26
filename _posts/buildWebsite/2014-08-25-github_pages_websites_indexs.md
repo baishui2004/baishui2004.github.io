@@ -40,7 +40,7 @@ Winfirm's Blog - by Steven Pan(潘学文)
 <br />&emsp;[http://codewu.com/](http://codewu.com/)&emsp;源码:&nbsp;[https://github.com/cinowu/cinowu.github.io](https://github.com/cinowu/cinowu.github.io)
 <br />
 陈堰平的个人网站
-<br />&emsp;[http://yanping.me/](http://yanping.me/)&emsp;源码:&nbsp;[https://github.com/yanping](https://github.com/yanping)
+<br />&emsp;[http://yanping.me/](http://yanping.me/)&emsp;文艺博客:&nbsp;[http://art.yanping.me/](http://art.yanping.me/)&emsp;中文博客:&nbsp;[http://yanping.me/cn/](http://yanping.me/cn/)&emsp;源码:&nbsp;[https://github.com/yanping](https://github.com/yanping)
 <br />
 Jun's Blog
 <br />&emsp;[http://cnmahj.toolib.net/](http://cnmahj.toolib.net/)&emsp;源码:&nbsp;[https://github.com/cnmahj/cnmahj.github.com](https://github.com/cnmahj/cnmahj.github.com)

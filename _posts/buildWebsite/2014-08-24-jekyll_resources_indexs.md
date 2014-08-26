@@ -20,6 +20,7 @@ tags:
 ####目录####
 <pre>
 Jekyll官方资料
+Jekyll其他资料
 PortableJekyll官方资料
 PortableJekyll其他资料
 </pre>
@@ -40,6 +41,27 @@ PortableJekyll其他资料
 <br />
 文章头部设置
 <br />&emsp;[http://jekyllrb.com/docs/frontmatter/](http://jekyllrb.com/docs/frontmatter/)
+<br />
+Liquid Documentation
+<br />&emsp;[http://docs.shopify.com/themes/liquid-documentation/basics](http://docs.shopify.com/themes/liquid-documentation/basics)
+<br />
+Liquid for Designers
+<br />&emsp;[https://github.com/Shopify/liquid/wiki/Liquid-for-Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers)
+<br /><br />
+
+
+####Jekyll相关资料####
+为Jekyll增加不完美的分页和文章摘要 ←
+<br />&emsp;[http://kingauthur.info/2013/01/20/the-paginator-and-excerpt-in-jekyll/](http://kingauthur.info/2013/01/20/the-paginator-and-excerpt-in-jekyll/)
+<br />
+为Jekyll添加静态搜索 ←
+<br />&emsp;[http://kingauthur.info/2012/12/03/the-things-about-jekyll/](http://kingauthur.info/2012/12/03/the-things-about-jekyll/)
+<br />
+优化 jekyll 站点的 SEO 技巧
+<br />&emsp;[http://justjavac.com/jekyll/2012/01/16/the-seo-for-jekyll-blog.html](http://justjavac.com/jekyll/2012/01/16/the-seo-for-jekyll-blog.html)
+<br />
+使用kekyll构建静态网站 - crystalNB的专栏 - 博客频道 - CSDN.NET
+<br />&emsp;[http://blog.csdn.net/bugknightyyp/article/details/9790815](http://blog.csdn.net/bugknightyyp/article/details/9790815)
 <br /><br />
 
 

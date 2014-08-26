@@ -35,3 +35,6 @@ Markdown 语法说明 (简体中文版)
 <br />
 Markdown | 简书
 <br />&emsp;[http://jianshu.io/collection/BDu5F8/top](http://jianshu.io/collection/BDu5F8/top)
+<br />
+MarkDown中锚的使用 - rainduck - 博客园
+<br />&emsp;[http://www.cnblogs.com/rainduck/p/3593870.html](http://www.cnblogs.com/rainduck/p/3593870.html)

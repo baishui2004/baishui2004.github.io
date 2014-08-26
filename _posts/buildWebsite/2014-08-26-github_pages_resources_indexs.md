@@ -18,6 +18,7 @@ tags:
 ####目录####
 <pre>
 Github pages官方资料
+Github pages其他资料
 Github pages中文化相关资源
 </pre>
 <!-- more -->
@@ -37,6 +38,18 @@ Setting up a custom domain with GitHub Pages
 <br />
 GitHub Pages Basics
 <br />&emsp;[https://help.github.com/categories/20/articles](https://help.github.com/categories/20/articles)
+<br /><br />
+
+
+####Github pages其他资料####
+一步步在GitHub上创建博客主页-最新版
+<br />&emsp;[http://www.pchou.info/web-build/2014/07/04/build-github-blog-page-08.html](http://www.pchou.info/web-build/2014/07/04/build-github-blog-page-08.html)
+<br />
+搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门 - 阮一峰的网络日志
+<br />&emsp;[http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+<br />
+Github Page创建个人主页以及绑定域名 - 蛙牛的个人页面 - 开源中国社区
+<br />&emsp;[http://my.oschina.net/lujianing/blog/178745](http://my.oschina.net/lujianing/blog/178745)
 <br /><br />
 
 
