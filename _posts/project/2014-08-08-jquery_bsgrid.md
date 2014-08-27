@@ -1,5 +1,5 @@
 --- 
-title:      简单易用的jquery grid插件 Common Gui Tools
+title:      简单易用的jquery grid插件 jquery.bsgrid
 layout:     post
 permalink:  project/jquery_bsgrid.html
 category:   Project
@@ -59,6 +59,7 @@ jquery.bsgrid 简单易用的jquery grid插件
 13，Grid with ArtDialog
 14，Grid And Form with ArtDialog
 </pre>
+<!-- more -->
 
 #####1，Example Index#####
 ![Example Index](https://raw.githubusercontent.com/baishui2004/jquery.bsgrid/master/WebContent/documention/images/jquery.bsgrid-01_examples_index.png)
