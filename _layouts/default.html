@@ -13,7 +13,6 @@
 		<meta http-equiv="cache-control" content="public" />
 		<meta http-equiv="expires" content="2592000" />
 		
-		<meta name="Robots" contect="all" />
 		<meta baidu-gxt-verify-token="ebd8e268641ebc5c7e2cd73df9d0c618">
 		
 		<base href="" />
@@ -23,6 +22,8 @@
 		{% for css in page.css %}
 			<link rel="stylesheet" href="{{ css }}" type="text/css" />
 		{% endfor %}
+		
+		{% include jumpToTop.html %}
 	</head>
 	<body>
 		<div id="header">
@@ -58,6 +59,9 @@
 				<div>{{ line }}</div>
 				{% endfor %}
 			</div>
+		</div>
+		
+		<div id="jumpToTop" onclick="jumpToTop();">
 		</div>
 		
 		{% for js in site.js %}
