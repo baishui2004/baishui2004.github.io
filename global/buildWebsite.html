@@ -7,7 +7,7 @@ permalink:  buildWebsite.html
 <span style="float: right;"><a href="buildWebsite_articles.html" style="font-size: 12px; color: #777;">文章目录</a></span>
 <br />
 
-{% for post in site.categories.buildwebsite limit:5 %} 
+{% for post in site.tags.BuildWebsite limit:5 %} 
 	{% include post.html %}
 {% endfor %}
 
