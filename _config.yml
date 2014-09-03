@@ -8,6 +8,9 @@ encoding:       utf-8
 markdown:       kramdown
 #markdown:       rdiscount
 
+#修改默认的_post文件夹下文章生成URL规则
+permalink: /:year/:month/:day/:title.html
+
 
 css:
     - /static/css/default.css
@@ -49,7 +52,7 @@ projects:
        file:         /project/jquery_bsgrid.html
        url:          https://github.com/baishui2004/jquery.bsgrid/
        demo:         http://jquery-bsgrid.coding.io/
-       description:  一个简单易用的jquery grid插件，支持分页或不分页，支持json、xml数据格式，对导出友好，扩展性友好。
+       description:  一个简单易用的jQuery Grid插件，支持分页或不分页，支持json、xml数据格式，对导出友好，扩展性友好。
      - name:         Common Gui Tools
        file:         /project/common_gui_tools.html
        url:          https://github.com/baishui2004/common_gui_tools/

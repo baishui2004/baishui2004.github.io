@@ -1,7 +1,7 @@
 --- 
 title:      Github pages资源索引贴
 layout:     post
-category:   buildWebsite
+category:   网站搭建
 tags: 
  - Github pages
 ---

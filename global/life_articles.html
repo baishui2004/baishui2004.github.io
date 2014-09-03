@@ -9,7 +9,7 @@ permalink:  life_articles.html
 
 <ul class="ul_box">
 
-	{% for post in site.categories.life %} 
+	{% for post in site.tags.Life %} 
 	<li>
 		{{ post.date | date: "%m.%d" }}:&nbsp;&nbsp;
 		<a href="{{ post.url }}" target="_blank">{{ post.title }}</a>

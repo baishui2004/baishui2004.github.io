@@ -1,7 +1,7 @@
 --- 
 title:      CentOS下安装SVN服务
 layout:     post
-category:   vcs
+category:   版本控制
 tags: 
  - SVN
  - Linux
