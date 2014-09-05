@@ -16,17 +16,17 @@ http://thebestofyouth.com/category.html
 http://thebestofyouth.com/category.html?param=测试
 http://thebestofyouth.com/category.html#param=测试
 </pre>
-第二个URL表示给页面传一个参数，参数名：param，参数值：测试
+第二种是问号URL，表示给页面传递一个参数，参数名：param，参数值：测试
 <br />
-第三个URL表示定位到页面的锚点位置，关于锚点：<a href="http://magicalboy.com/html-named-anchors/">创建HTML锚点</a>、<a href="http://www.w3school.com.cn/html/html_links.asp">W3Cschool：HTML链接</a>
-<br /><br />
+第三种是锚点URL，表示定位到页面的锚点位置，关于锚点：<a href="http://magicalboy.com/html-named-anchors/">创建HTML锚点</a>、<a href="http://www.w3school.com.cn/html/html_links.asp">W3Cschool：HTML链接</a>
+<br /><br />，需要说明的是页面中如果不存在此锚点并不会发生异常或错误。
 
 动态页面一般是与后台进行交互的页面，比如jsp、asp、php，即想要实现动态效果，需要后台的支持。
 <br />
 而对于Github pages页面，其是静态页面，如果想要实现动态效果这怎么办呢？
 <br /><br />
 
-###1，使用第二种URL访问方式：?param=测试###
+###1，使用问号URL访问方式：?param=测试###
 使用JS解析参数的办法如下：
 <pre>
 var pageHref = window.location.href;
@@ -44,11 +44,11 @@ location.href = window.location.href;
 但是在IE下实现不了预期的动态效果，提示：We didn't receive a proper request from your browser.
 <br /><br />
 
-###2，使用第三种URL访问方式：#param=测试###
+###2，使用锚点URL访问方式：#param=测试###
 这种是锚点方式，如何解析参数呢，依然是使用JS解析参数：
 <pre>
 var pageHref = window.location.href;
-var pIndex = pageHref.indexOf('?param=');
+var pIndex = pageHref.indexOf('#param=');
 var param = pageHref.substring(pIndex + 7);
 </pre>
 那刷新当前页面是是不是如上面的方式一样呢：
@@ -57,12 +57,14 @@ location.href = window.location.href;
 </pre>
 答案是否，带锚点的URL使用如上方式刷新不了页面，且会出现异常效果，可参考：<a href="http://www.dingcankong.com/location-href%E8%B7%B3%E8%BD%AC%E5%BD%93%E5%89%8D%E9%A1%B5%E9%9D%A2%E5%8A%A0%E9%94%9A%E7%82%B9%E7%9A%84%E9%97%AE%E9%A2%98/">location.href跳转当前页面锚点的问题</a>。出现了这样的问题如何解决呢，答案很简单，即在当前页面不使用刷新本页面的方式，而是采用主动方法调用实现动态效果，如下：
 <pre>
+parseParse('http://thebestofyouth.com/category.html?param=项目');
+
 function parseParse(lHref) {
-  var pIndex = lHref.indexOf('?param=');
+  var pIndex = lHref.indexOf('#param=');
   var param = lHref.substring(pIndex + 7);
 }
 </pre>
-本博客使用此种方式实现的分类、标签动态加载代码：<a href="/static/js/param.js">param.js</a>，效果可点击本博客右侧文章分类或文章标签进行查看。
+本博客使用此种方式实现文章分类、文章标签下文章列表的动态加载，代码文件：<a href="/static/js/param.js">param.js</a>，效果可点击本博客右侧文章分类或文章标签进行查看。
 <br /><br />
 
 <b>特别提示：</b>
