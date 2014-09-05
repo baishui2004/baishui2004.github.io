@@ -17,6 +17,11 @@ css:
     - /static/css/appden-part.css
 
 
+js:
+   - /static/js/jquery-1.4.4.min.js
+   - /static/js/param.js
+
+
 #导航
 nav:
     - name:     首页

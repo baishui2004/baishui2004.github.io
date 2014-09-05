@@ -25,7 +25,9 @@
 		
 		{% include jumpToTop.html %}
 		
-		<script src="/static/js/jquery-1.4.4.min.js" type="text/javascript" charset="utf-8"></script>
+		{% for js in site.js %}
+			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
+		{% endfor %}
 	</head>
 	<body>
 		<div id="header">
@@ -66,9 +68,6 @@
 		<div id="jumpToTop" onclick="jumpToTop();">
 		</div>
 		
-		{% for js in site.js %}
-			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
-		{% endfor %}
 		{% for js in page.js %}
 			<script src="{{ js }}" type="text/javascript" charset="utf-8"></script>
 		{% endfor %}

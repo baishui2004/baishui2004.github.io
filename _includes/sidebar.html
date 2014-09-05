@@ -37,7 +37,7 @@
 		<span>文章分类</span>
 		<ul id="categories-ul">
 			{% for category in site.categories %} 
-			<li><a href="/category.html?param={{ category[0] }}">{{ category[0] }}</a><span>({{ category[1].size }})</span></li>
+			<li><a href="javascript:showULContentByType('/category.html#param={{ category[0] }}');">{{ category[0] }}</a><span>({{ category[1].size }})</span></li>
 			{% endfor %}
 		</ul>
 	</div>
@@ -48,20 +48,8 @@
 		<span>文章标签</span>
 		<ul id="tags-ul">
 			{% for tag in site.tags %} 
-			<li><a href="/tag.html?param={{ tag[0] }}">{{ tag[0] }}</a><span>({{ tag[1].size }})</span></li>
+			<li><a href="javascript:showULContentByType('/tag.html#param={{ tag[0] }}');">{{ tag[0] }}</a><span>({{ tag[1].size }})</span></li>
 			{% endfor %}
 		</ul>
 	</div>
 {% endif %}
-<script type="text/javascript">
-	$(function(){
-		if($.browser.msie) {
-			$('#categories-ul a').each(function(){
-				$(this).attr('href', $(this).attr('href').replace('/category.html?param=', '/categories.html#') + '-ref');
-			});
-			$('#tags-ul a').each(function(){
-				$(this).attr('href', $(this).attr('href').replace('/tag.html?param=', '/tags.html#') + '-ref');
-			});
-		}
-	});
-</script>

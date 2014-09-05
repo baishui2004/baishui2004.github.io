@@ -1,21 +1,30 @@
 $(function(){
 	var lHref = window.location.href;
+	showULContentByType(lHref);
+});
 
+function showULContentByType(lHref){
 	var type = '';
-	if (lHref.indexOf('category.html?param=') > 0) {
+	if (lHref.indexOf('category.html#param=') > 0) {
 		type = 'category';
-	} else if (lHref.indexOf('tag.html?param=') > 0) {
+	} else if (lHref.indexOf('tag.html#param=') > 0) {
 		type = 'tag';
+	} else {
+		return;
 	}
 
 	if (type != '') {
-		var cIndex = lHref.indexOf('?param=');
-		if (cIndex > 0) {
-			var param = lHref.substring(cIndex + 7);
-			showULContent(type, decodeURI(param));
+		if((type == 'category' && this.location.href.indexOf('category.html#param=') < 0) || type == 'tag' && this.location.href.indexOf('tag.html#param=') < 0) {
+			location.href = lHref;
+		} else {
+			var cIndex = lHref.indexOf('#param=');
+			if (cIndex > 0) {
+				var param = lHref.substring(cIndex + 7);
+				showULContent(type, decodeURI(param));
+			}
 		}
 	}
-});
+}
 
 function showULContent(type, param) {
 	// $.ajax, 405 (Method Not Allowed)
@@ -43,8 +52,8 @@ function showULContent(type, param) {
 				});
 			}
 
-			$('#article-span').append(param + '&nbsp;(' + cnt + ')');
-			$('#article-ul').append(ul_content);
+			$('#article-span').html((type == 'category' ? '分类：' : '标签：') + param + '&nbsp;(' + cnt + ')');
+			$('#article-ul').html(ul_content);
 		}
 	);
 }
