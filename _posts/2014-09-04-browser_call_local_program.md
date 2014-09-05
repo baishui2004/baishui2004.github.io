@@ -1,20 +1,19 @@
 --- 
-title:      Windows下浏览器调用本地程序
+title:      浏览器调用本地程序
 layout:     post
 category:   技术
 tags: 
  - Browser
  - Program call another
-css:
- - /static/css/pygments_eclipse.css
 ---
 
-本文介绍两种方式：
+本文介绍Windows下浏览器调用本地程序的两种方式：
 <pre>
 1，修改注册表即URL Protocol Handler方式；
 2，对于特定浏览器的特定调用方式；
 </pre>
-推荐使用第一种。
+推荐使用第一种，理由是此种方式无关乎浏览器，所有浏览器都可以调用本地程序成功。
+<br />
 需要这样使用的场景这里并不做描述，需要注意的是这样使用是否有安全风险。
 <br /><br />
 
