@@ -26,16 +26,17 @@ jQuery.bsgrid 简单易用的jQuery Grid插件
 
 #####首先给出典型效果图示#####
 1，内置多套皮肤（点击下面对应皮肤图片可查看示例页面），并可非常容易的自定义皮肤（参考<a href="http://jquery-bsgrid.coding.io/examples/grid/themes/custom.html" target="_blank">Custom Blue Style</a>）
+<div>
 <div style="display:none;">
-<!--
 <style type="text/css">
+<!--
 	.tabImg {
 		width: 100%;
 		border-collapse: collapse;
 	}
 	.tabImg td {
         color: green;
-		border: solid 1 green;
+		border: solid 1px green;
         background-color: white;
 		padding: 0;
 		margin: 0;
@@ -46,9 +47,11 @@ jQuery.bsgrid 简单易用的jQuery Grid插件
 		width: 100%;
 		border: solid 0 white;
 	}
-</style>
 -->
+</style>
 </div>
+</div>
+<div>
 <table class="tabImg">
 	<tr>
 		<td>ExtJS Gray Style
@@ -87,7 +90,9 @@ jQuery.bsgrid 简单易用的jQuery Grid插件
         </td>
     </tr>
 </table>
+</div>
 2，可以非常方便的集成第三方分页工具条使用（点击下面对应皮肤图片可查看示例页面）
+<div>
 <table class="tabImg">
 	<tr>
 		<td>With jqPagination
@@ -126,6 +131,7 @@ jQuery.bsgrid 简单易用的jQuery Grid插件
         </td>
     </tr>
 </table>
+</div>
 
 
 ###bsgrid的由来###
