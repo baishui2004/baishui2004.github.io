@@ -61,7 +61,7 @@ projects:
      - name:         Common Gui Tools
        file:         /project/common_gui_tools.html
        url:          https://github.com/baishui2004/common_gui_tools/
-       description:  使用java编写，GUI界面的实用小工具集，当前1.1版有13个小工具。
+       description:  使用java编写，GUI界面的实用小工具集，当前1.2版有16个小工具。
 
 #链接
 links:
