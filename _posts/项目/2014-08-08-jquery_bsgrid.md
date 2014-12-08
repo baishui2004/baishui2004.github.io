@@ -16,17 +16,17 @@ jQuery.bsgrid 简单易用的jQuery Grid插件
 
 本插件的早期及当前版本已在多个项目中使用。
 
+插件版本：1.30
+<br />
 开源协议：Apache Licence 2
 <br />
-插件版本：1.21
-<br />
-更新日期：2014-10-16
+更新日期：2014-12-05
 <br />
 在线演示：[http://bsgrid.oschina.mopaas.com/](http://bsgrid.oschina.mopaas.com/)
 <br />
-详细介绍：[http://thebestofyouth.com/project/jquery_bsgrid.html](http://thebestofyouth.com/project/jquery_bsgrid.html)
+在线文档：[http://bsgrid.oschina.mopaas.com/README.md.html](http://bsgrid.oschina.mopaas.com/README.md.html)
 <br />
-Git@OSC托管的图片可能不稳定(会造成下面部分图片显示不出)，可直接右键另存<a href="http://git.oschina.net/bs2004/jquery.bsgrid/raw/master/README.md.pdf">README.md.pdf</a>到本地查看此文档说明。
+文档中可能有部分图片显示不稳定（显示不出），可直接右键另存<a href="http://git.oschina.net/bs2004/jquery.bsgrid/raw/master/README.md.pdf">README.md.pdf</a>到本地查看此文档说明。
 
 #####首先给出典型效果图示#####
 1，内置多套皮肤（点击下面对应皮肤图片可查看示例页面），并可非常容易的自定义皮肤（参考<a href="http://bsgrid.oschina.mopaas.com/examples/grid/themes/custom.html" target="_blank">Custom Blue Style</a>）
@@ -220,9 +220,10 @@ Merged Files: 目录builds/merged，合并经常一起使用的css、js，合并
         &lt;/tr&gt;
     &lt;/table&gt;
     &lt;script type="text/javascript"&gt;
+        var gridObj;
         $(function () {
-            $.fn.bsgrid.init('searchTable', {
-                url: 'data/simple.json',
+            gridObj = $.fn.bsgrid.init('searchTable', {
+                url: 'data/json.jsp',
                 // autoLoad: false,
                 pageSizeSelect: true,
                 pageSize: 10
@@ -230,7 +231,7 @@ Merged Files: 目录builds/merged，合并经常一起使用的css、js，合并
         });
     
         function operate(record, rowIndex, colIndex, options) {
-            return '&lt;a href="#" onclick="alert(\'ID=' + record['ID'] + '\');"&gt;Operate&lt;/a&gt;';
+            return '&lt;a href="#" onclick="alert(\'ID=' + gridObj.getRecordIndexValue(record, 'ID') + '\');"&gt;Operate&lt;/a&gt;';
         }
     &lt;/script&gt;
 </pre>
@@ -365,7 +366,7 @@ http://bsgrid.oschina.mopaas.com/examples/grid/export.html?exportFileName=Export
     var gridObj;
     $(function () {
         gridObj = $.fn.bsgrid.init('searchTable', {
-            url: 'data/simple.json',
+            url: 'data/json.jsp',
             pageSizeSelect: true,
             pageSize: 10
         });
