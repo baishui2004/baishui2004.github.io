@@ -1,5 +1,5 @@
-highlighter:    pygments
-#使用pygments进行编程语言的语法着色
+highlighter:    rouge
+#使用rouge进行编程语言的语法着色
 #分页每页多少篇
 paginate:       5
 
