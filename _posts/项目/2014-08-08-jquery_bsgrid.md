@@ -22,7 +22,7 @@ QQ群交流：254754154&emsp;&emsp;&nbsp;&nbsp;捐助：<a href="http://bsgrid.d
 
 ### 皮肤效果 ###
 内置多套皮肤(点击图片查看示例页面)，并可非常容易的定制皮肤[示例：<a href="http://bsgrid.daoapp.io/examples/zh-CN.html#href=examples/grid/themes/custom.html" target="_blank">Custom Blue Style</a>]
-<a href="http://bsgrid.daoapp.io/examples/grid/simple.html" target="_blank"><img title="点击图片查看示例页面" src="http://git.oschina.net/bs2004/jquery.bsgrid/raw/v1.37/documention/images/themes.jpg" /></a>
+<a href="http://bsgrid.daoapp.io/examples/grid/simple.html" target="_blank"><img title="点击图片查看示例页面" src="https://github.com/baishui2004/jquery.bsgrid/raw/v1.37/documention/images/themes.jpg" /></a>
 
 ### bsgrid的由来 ###
 &emsp;&emsp;首先，解释插件名称为何叫bsgrid，是因为作者常用bs开头的字符做英文账号的缘故。bsgrid的诞生因为主流插件、框架的grid使用或扩展比较复杂，而本插件作者力图开发一款使用简单、功能实用、容易扩展的grid控件，目前已初步实现此目标。
